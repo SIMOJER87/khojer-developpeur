@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khojer Développeur - Blog</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --text-color: #333;
+            --background-color: #f8f8f8;
+            --content-bg: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--secondary-color);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        nav a {
+            color: white;
+            margin: 0.5rem 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        section, article {
+            background-color: var(--content-bg);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        h1, h2 {
+            color: var(--primary-color);
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            header, nav, main, footer {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khojer Développeur</h1>
+        <p>Votre partenaire de confiance dans la construction moderne</p>
+    </header>
+    <nav>
+        <a href="#">Accueil</a>
+        <a href="#">À propos</a>
+        <a href="#">Articles</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <section id="a-propos">
+            <h2>À propos de nous</h2>
+            <p>Khojer Développeur est une entreprise spécialisée dans la construction de projets résidentiels, commerciaux et industriels. Nous combinons innovation, qualité et durabilité pour bâtir l'avenir.</p>
+        </section>
+        <article>
+            <h2>Les 5 grandes tendances de la construction en 2025</h2>
+            <p><em>Publié le 30 avril 2025 | Par l’équipe Khojer Développeur</em></p>
+            <ul>
+                <li><strong>Le béton bas carbone</strong> – Réduction de l'empreinte environnementale.</li>
+                <li><strong>La construction modulaire</strong> – Rapide, efficace et personnalisable.</li>
+                <li><strong>Les bâtiments intelligents</strong> – Gestion optimisée de l’énergie.</li>
+                <li><strong>La préfabrication</strong> – Moins de déchets, plus de rapidité.</li>
+                <li><strong>Les matériaux biosourcés</strong> – Chanvre, bois compressé, paille.</li>
+            </ul>
+            <p>Chez Khojer Développeur, nous intégrons ces innovations pour répondre aux attentes de demain.</p>
+        </article>
+        <section id="galerie">
+            <h2>Nos réalisations</h2>
+            <div class="gallery">
+                <img src="https://via.placeholder.com/400x250?text=Projet+1" alt="Projet 1">
+                <img src="https://via.placeholder.com/400x250?text=Projet+2" alt="Projet 2">
+                <img src="https://via.placeholder.com/400x250?text=Projet+3" alt="Projet 3">
+                <img src="https://via.placeholder.com/400x250?text=Projet+4" alt="Projet 4">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Khojer Développeur - Tous droits réservés</p>
+    </footer>
+</body>
+</html>
